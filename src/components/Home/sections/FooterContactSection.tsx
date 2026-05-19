@@ -45,7 +45,7 @@ export const FooterContactSection = () => {
               the mix.
             </p>
             <div>
-              <h3 className="[font-family:'Inter',Helvetica] font-medium text-white text-lg md:text-[21px] leading-[33px] mb-3">
+              <h3 className="[font-family:'Inter',Helvetica] font-medium text-[white] text-lg md:text-[21px] leading-[33px] mb-3">
                 Company Information
               </h3>
               <address className="not-italic flex flex-col gap-2">
@@ -56,7 +56,7 @@ export const FooterContactSection = () => {
                   Send mail:{" "}
                   <a
                     href="mailto:Safebytecompany@gmail.com"
-                    className="hover:text-white transition-colors"
+                    className="hover:text-[white] transition-colors"
                   >
                     Safebytecompany@gmail.com
                   </a>
@@ -65,7 +65,7 @@ export const FooterContactSection = () => {
                   Call us:{" "}
                   <a
                     href="tel:2341096666"
-                    className="hover:text-white transition-colors"
+                    className="hover:text-[white] transition-colors"
                   >
                     (234) 109-6666
                   </a>
@@ -77,7 +77,7 @@ export const FooterContactSection = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="[font-family:'Inter',Helvetica] font-normal text-[#cdd4ef] text-[14px] md:text-[14.5px] leading-[18px] hover:text-white transition-colors duration-300"
+                  className="[font-family:'Inter',Helvetica] font-normal text-[#cdd4ef] text-[14px] md:text-[14.5px] leading-[18px] hover:text-[white] transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -87,7 +87,7 @@ export const FooterContactSection = () => {
 
           {/* Services */}
           <div className="flex flex-col gap-4">
-            <h3 className="[font-family:'Inter',Helvetica] font-medium text-white text-lg md:text-[20px] leading-[33px]">
+            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[white] text-lg md:text-[20px] leading-[33px]">
               Our Services
             </h3>
             <ul className="flex flex-col gap-2.5">
@@ -95,7 +95,7 @@ export const FooterContactSection = () => {
                 <li key={item}>
                   <a
                     href="#"
-                    className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-white transition-colors duration-300"
+                    className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-[white] transition-colors duration-300"
                   >
                     {item}
                   </a>
@@ -106,7 +106,7 @@ export const FooterContactSection = () => {
 
           {/* Company */}
           <div className="flex flex-col gap-4">
-            <h3 className="[font-family:'Inter',Helvetica] font-medium text-white text-lg md:text-[20px] leading-[33px]">
+            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[white] text-lg md:text-[20px] leading-[33px]">
               Company
             </h3>
             <ul className="flex flex-col gap-2.5">
@@ -114,7 +114,7 @@ export const FooterContactSection = () => {
                 <li key={item}>
                   <a
                     href="#"
-                    className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-white transition-colors duration-300"
+                    className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-[white] transition-colors duration-300"
                   >
                     {item}
                   </a>
@@ -167,7 +167,7 @@ export const FooterContactSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] text-center md:text-left">
             Copyright © 2025 Safebyte by{" "}
-            <a href="#" className="text-white hover:underline">
+            <a href="#" className="text-[white] hover:underline">
               Case-Themes
             </a>
             . All Rights Reserved.
@@ -180,7 +180,7 @@ export const FooterContactSection = () => {
               <div key={item} className="flex items-center">
                 <a
                   href="#"
-                  className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-white transition-colors duration-300 px-2"
+                  className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-[white] transition-colors duration-300 px-2"
                 >
                   {item}
                 </a>

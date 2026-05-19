@@ -37,13 +37,13 @@ export const IntelligentProcessesSection = () => {
             className={`w-full lg:w-1/2 flex flex-col gap-6 lg:pr-[100px] xl:pr-[140px] transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
           >
             <span className="inline-flex self-start px-6 py-2 bg-[#164ac8] rounded-lg">
-              <span className="[font-family:'Inter',Helvetica] font-normal text-white text-sm tracking-[2.00px] leading-[22px] whitespace-nowrap">
+              <span className="[font-family:'Inter',Helvetica] font-normal text-[white] text-sm tracking-[2.00px] leading-[22px] whitespace-nowrap">
                 AI SOLUTIONS
               </span>
             </span>
             <h2
               id="intelligent-processes-heading"
-              className="[font-family:'Google_Sans',Helvetica] font-medium text-white text-[28px] md:text-[34px] lg:text-[40px] leading-[1.3]"
+              className="[font-family:'Google_Sans',Helvetica] font-medium text-[white] text-[28px] md:text-[34px] lg:text-[40px] leading-[1.3]"
             >
               Intelligente Prozesse. Bessere Entscheidungen. Nachhaltige
               Ergebnisse.

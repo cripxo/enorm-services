@@ -120,7 +120,7 @@ export const TopNavigationSection = () => {
 
           <a
             href="tel:071187999960"
-            className="[font-family:'Plus_Jakarta_Sans',Helvetica] text-base font-normal text-white mt-2"
+            className="[font-family:'Plus_Jakarta_Sans',Helvetica] text-base font-normal text-[white] mt-2"
           >
             📞 0711 879 999 60
           </a>

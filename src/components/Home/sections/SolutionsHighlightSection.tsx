@@ -86,7 +86,7 @@ export const SolutionsHighlightSection = () => {
               className="inline-flex h-12 px-8 md:px-[42px] bg-[#164ac8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
               aria-label="Mehr über uns"
             >
-              <span className="[font-family:'Inter',Helvetica] font-medium text-white text-[13.9px] text-center tracking-[0.60px] whitespace-nowrap">
+              <span className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[13.9px] text-center tracking-[0.60px] whitespace-nowrap">
                 Mehr über uns
               </span>
             </a>
@@ -111,10 +111,10 @@ export const SolutionsHighlightSection = () => {
                 aria-hidden="true"
                 src="https://c.animaapp.com/afwsxCsF/img/component-5.svg"
               />
-              <div className="[font-family:'Public_Sans',Helvetica] font-normal text-white text-[50px] md:text-[70px] text-center leading-[70px]">
+              <div className="[font-family:'Public_Sans',Helvetica] font-normal text-[white] text-[50px] md:text-[70px] text-center leading-[70px]">
                 17+
               </div>
-              <p className="[font-family:'Inter',Helvetica] font-normal text-white text-sm md:text-[17px] text-center leading-[28px] mt-2">
+              <p className="[font-family:'Inter',Helvetica] font-normal text-[white] text-sm md:text-[17px] text-center leading-[28px] mt-2">
                 years of experience
                 <br />
                 since at 1996

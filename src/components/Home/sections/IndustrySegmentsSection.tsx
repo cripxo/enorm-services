@@ -53,7 +53,7 @@ export const IndustrySegmentsSection = () => {
           className={`flex flex-col items-center gap-4 mb-8 md:mb-12 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <span className="inline-flex items-center justify-center px-6 py-2 bg-[#164ac8] rounded-lg">
-            <span className="[font-family:'Google_Sans',Helvetica] font-normal text-white text-xs text-center tracking-[2.00px] leading-5 whitespace-nowrap">
+            <span className="[font-family:'Google_Sans',Helvetica] font-normal text-[white] text-xs text-center tracking-[2.00px] leading-5 whitespace-nowrap">
               BEREICHE UNSERER EXPERTISE
             </span>
           </span>

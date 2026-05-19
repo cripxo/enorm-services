@@ -38,7 +38,7 @@ export const BrandProtectionSection = () => {
           <div className="flex flex-col gap-4">
             <h2
               id="brand-protection-title"
-              className="[font-family:'Inter',Helvetica] font-medium text-white text-[22px] md:text-[28px] leading-[38px]"
+              className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[22px] md:text-[28px] leading-[38px]"
             >
               {brandProtectionContent.title}
             </h2>
@@ -57,7 +57,7 @@ export const BrandProtectionSection = () => {
             aria-label={brandProtectionContent.cta.label}
             className="inline-flex px-6 md:px-[35px] py-3 bg-[#164ac8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
           >
-            <span className="[font-family:'Inter',Helvetica] font-medium text-white text-[13px] md:text-[14.2px] text-center tracking-[0.60px] whitespace-nowrap">
+            <span className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[13px] md:text-[14.2px] text-center tracking-[0.60px] whitespace-nowrap">
               {brandProtectionContent.cta.label}
             </span>
           </a>

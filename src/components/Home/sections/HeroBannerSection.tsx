@@ -29,13 +29,13 @@ export const HeroBannerSection = ()=> {
           <p className="flex h-5 items-center whitespace-nowrap [font-family:'Inter',Helvetica] text-[12px] md:text-[13.8px] font-medium tracking-[5.00px] text-[#1172e7]">
             DAMIT ALLES LÄUFT.
           </p>
-          <h1 className="[font-family:'FONTSPRING_DEMO_-_Tactic_Sans_Exd_Reg-Regular',Helvetica] text-[48px] md:text-[64px] lg:text-[80px] font-normal leading-[1] tracking-[0] text-white">
+          <h1 className="[font-family:'FONTSPRING_DEMO_-_Tactic_Sans_Exd_Reg-Regular',Helvetica] text-[48px] md:text-[64px] lg:text-[80px] font-normal leading-[1] tracking-[0] text-[white]">
             ENORM
             <br />
             SERVICES
           </h1>
           <p
-            className={`[font-family:'Google_Sans',Helvetica] text-[15px] md:text-[17px] font-normal leading-[27px] tracking-[0] text-white max-w-[600px] transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            className={`[font-family:'Google_Sans',Helvetica] text-[15px] md:text-[17px] font-normal leading-[27px] tracking-[0] text-[white] max-w-[600px] transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
           >
             Wir arbeichen sich modernen Lösungen für Gebäude-, Betriebsabläufe
             und Unternehmenprozesse.
@@ -54,12 +54,12 @@ export const HeroBannerSection = ()=> {
                   type={button.type}
                   className={
                     isPrimary
-                      ? "inline-flex h-[48px] md:h-[52px] items-center justify-center overflow-hidden rounded-lg bg-[#164ac8] px-6 md:px-10 hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
-                      : "inline-flex h-[48px] md:h-[52px] items-center justify-center overflow-hidden rounded-lg border-2 border-solid border-white px-5 md:px-[30px] hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                      ? "inline-flex h-[48px] md:h-[52px] items-center justify-center overflow-hidden rounded-lg bg-[#1272E8] px-6 md:px-10 hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
+                      : "inline-flex h-[48px] md:h-[52px] items-center justify-center overflow-hidden rounded-lg border-2 border-solid border-[white] px-5 md:px-[30px] hover:bg-white/10 transition-all duration-300 hover:scale-105"
                   }
                   aria-label={button.label}
                 >
-                  <span className="[font-family:'Plus_Jakarta_Sans',Helvetica] text-center text-[13px] md:text-sm font-medium leading-[normal] tracking-[0.60px] text-white whitespace-nowrap">
+                  <span className="[font-family:'Plus_Jakarta_Sans',Helvetica] text-center text-[13px] md:text-sm font-medium leading-[normal] tracking-[0.60px] text-[white] whitespace-nowrap">
                     {button.label}
                   </span>
                 </button>

@@ -51,7 +51,7 @@ export const ServicesGridSection = () => {
             className="inline-flex px-8 md:px-10 py-3 bg-[#164ac8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105 mt-8"
             aria-label="View all services"
           >
-            <span className="[font-family:'Inter',Helvetica] font-medium text-white text-[13.7px] text-center tracking-[0.60px] whitespace-nowrap">
+            <span className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[13.7px] text-center tracking-[0.60px] whitespace-nowrap">
               View All Services
             </span>
           </a>
