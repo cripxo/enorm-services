@@ -32,7 +32,7 @@ export const TopNavigationSection = () => {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="lg:hidden flex flex-col gap-1.5 p-2"
+            className="lg:hidden flex flex-col gap-1.5 p-2 text-[white]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
