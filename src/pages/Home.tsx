@@ -25,7 +25,7 @@ export const Home = () => {
     >
       <div className="flex-1 flex flex-col">
         {pageSections.map(({ id, component: SectionComponent }) => (
-          <section key={id} aria-label={id}>
+          <section key={id} aria-label={id} className={id === "top-navigation" ? "absolute w-full" : ""}>
             <SectionComponent />
           </section>
         ))}

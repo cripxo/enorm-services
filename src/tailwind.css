@@ -48,6 +48,15 @@
   animation: var(--animate-spin);
 }
 
+.link-active{
+  border-bottom: 2px solid #1272E8 !important;
+}
+
+/* hover border (vetëm kur NUK është active) */
+nav a:hover {
+  border-bottom: 2px solid #1272E8;
+}
+
 @keyframes spin {
   to {
     transform: rotate(1turn);
