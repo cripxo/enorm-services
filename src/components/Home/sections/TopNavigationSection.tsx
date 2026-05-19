@@ -37,17 +37,17 @@ export const TopNavigationSection = () => {
             aria-label="Toggle menu"
           >
             <span
-              className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${
+              className={`block w-6 h-0.5 bg-[white] transition-transform duration-300 ${
                 menuOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ${
+              className={`block w-6 h-0.5 bg-[white] transition-opacity duration-300 ${
                 menuOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${
+              className={`block w-6 h-0.5 bg-[white] transition-transform duration-300 ${
                 menuOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
