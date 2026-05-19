@@ -109,9 +109,7 @@ export const TopNavigationSection = () => {
                 key={item.label}
                 to={item.href}
                 className={`[font-family:'Inter',Helvetica] text-base font-medium py-2 border-b border-white/10 transition-colors duration-300 ${
-                  isActive
-                    ? "text-white"
-                    : "text-[#A4B3C4] hover:text-white"
+                  isActive ? "text-[white] link-active" : "text-[#A4B3C4] hover:text-[white]"
                 }`}
                 onClick={() => setMenuOpen(false)}
               >
