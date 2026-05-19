@@ -1,11 +1,12 @@
 import { useScrollAnimation } from "../../GlobalComponents/useScrollAnimation";
+import flareGuard from "../../../assets/svgs/flare_guard_icon.svg";
 
 const brandProtectionContent = {
   title: "BRANDSCHUTZ",
   description:
     "Für umfassende Leistungen im baulichen Brandschutz arbeiten wir mit unserem Partnerunternehmen ENORM BRANDSCHUTZ zusammen.",
   image: {
-    src: "https://c.animaapp.com/afwsxCsF/img/image-3@2x.png",
+    src: flareGuard,
     alt: "Mitarbeiter bei Arbeiten im Bereich Brandschutz",
   },
   cta: {
@@ -38,11 +39,11 @@ export const BrandProtectionSection = () => {
           <div className="flex flex-col gap-4">
             <h2
               id="brand-protection-title"
-              className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[22px] md:text-[28px] leading-[38px]"
+              className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[18px] md:text-[18px] leading-[38px]"
             >
               {brandProtectionContent.title}
             </h2>
-            <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] max-w-[480px]">
+            <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] max-w-[550px]">
               {brandProtectionContent.description}
             </p>
           </div>
@@ -55,7 +56,7 @@ export const BrandProtectionSection = () => {
             target="_blank"
             rel="noreferrer"
             aria-label={brandProtectionContent.cta.label}
-            className="inline-flex px-6 md:px-[35px] py-3 bg-[#164ac8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
+            className="inline-flex px-6 md:px-[35px] py-3 bg-[#1272E8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
           >
             <span className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[13px] md:text-[14.2px] text-center tracking-[0.60px] whitespace-nowrap">
               {brandProtectionContent.cta.label}

@@ -1,6 +1,8 @@
 import { useScrollAnimation } from "../../GlobalComponents/useScrollAnimation";
+import topArrow from "../../../assets/images/arrow_bottom.png";
+import bottomArrow from "../../../assets/images/arrow_top.png";
 
-export const IntelligentProcessesSection = () => {
+export const IntelligentProcessesSection = () => {  
   const { ref, isVisible } = useScrollAnimation(0.1);
 
   return (
@@ -31,10 +33,28 @@ export const IntelligentProcessesSection = () => {
               }}
             />
           </div>
-
+              <div>
+                <img
+          alt="arrow"
+          className="mb-20"
+          src={topArrow}
+          aria-hidden="true"
+        />
+                <span className="inline-flex items-center justify-center px-4 py-2 bg-[#1272E8] rounded-[8px]">
+            <span className="[font-family:'Google_Sans',Helvetica] font-normal text-[white] text-[14px] text-center tracking-[2.00px] leading-5 whitespace-nowrap">
+              AI SOLUTIONS
+            </span>
+          </span>
+          <img
+          alt="arrow"
+          className="mt-20"
+          src={bottomArrow}
+          aria-hidden="true"
+        />
+              </div>
           {/* Right content */}
           <div
-            className={`w-full lg:w-1/2 flex flex-col gap-6 lg:pr-[100px] xl:pr-[140px] transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
+            className={`w-full lg:w-1/2 flex flex-col gap-6 lg:pr-[100px] lg:pl-[100px] xl:pr-[140px] transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`}
           >
             <span className="inline-flex self-start px-6 py-2 bg-[#164ac8] rounded-lg">
               <span className="[font-family:'Inter',Helvetica] font-normal text-[white] text-sm tracking-[2.00px] leading-[22px] whitespace-nowrap">
@@ -54,10 +74,10 @@ export const IntelligentProcessesSection = () => {
             </p>
             <button
               type="button"
-              className="inline-flex self-start h-12 px-8 md:px-[42px] bg-white items-center justify-center rounded-lg overflow-hidden cursor-pointer hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+              className="inline-flex self-start h-12 px-8 md:px-[42px] bg-[white] items-center justify-center rounded-lg overflow-hidden cursor-pointer hover:bg-gray-100 transition-all duration-300 hover:scale-105 mt-2 ml-2"
               aria-label="Mehr erfahren über intelligente Prozesse"
             >
-              <span className="[font-family:'Inter',Helvetica] font-medium text-[#111111] text-[14.2px] text-center tracking-[0.60px] whitespace-nowrap">
+              <span className="[font-family:'Inter',Helvetica] font-[medium] text-[#111111] text-[14.2px] text-center tracking-[0.60px] whitespace-nowrap">
                 Mehr erfahren
               </span>
             </button>

@@ -7,19 +7,17 @@ const socialLinks = [
 ];
 
 const serviceLinks = [
-  "Online Business Consulting",
-  "Portfolio Management",
-  "Search Engine Optimization",
-  "Managed IT Services",
-  "Conversion Optimization",
+  { label: "Startseite", href: "#" },
+  { label: "Gebäudereinigung", href: "#" },
+  { label: "AI Solutions", href: "#" },
+  { label: "Brandschutz", href: "#" },
 ];
 
 const companyLinks = [
-  "About us",
-  "Leadership Member",
-  "Our Services",
+  "Über uns",
+  "Kontakt",
+  "Datenschutz",
   "Careers",
-  "Case Studies",
 ];
 
 const legalLinks = [
@@ -30,74 +28,107 @@ const legalLinks = [
 
 export const FooterContactSection = () => {
   return (
-    <footer className="w-full bg-[#0b1d4b]">
-      {/* Main footer */}
-      <div className="max-w-[1320px] mx-auto px-6 md:px-12 lg:px-[60px] py-16 md:py-24 border-b border-[#ffffff26]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-          {/* Company info */}
-          <div className="md:col-span-2 lg:col-span-2 flex flex-col gap-6">
-            <a href="#" aria-label="Safebyte home">
-              <div className="w-[180px] md:w-[211px] h-[42px] bg-[url(https://c.animaapp.com/afwsxCsF/img/logo-full-white-png@2x.png)] bg-cover bg-center" />
-            </a>
-            <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[25px] max-w-[400px]">
-              We understand that business can be chaotic. That&#39;s where we
-              come in. We&#39;re focused on adding some much-needed balance to
-              the mix.
-            </p>
-            <div>
-              <h3 className="[font-family:'Inter',Helvetica] font-medium text-[white] text-lg md:text-[21px] leading-[33px] mb-3">
-                Company Information
-              </h3>
-              <address className="not-italic flex flex-col gap-2">
-                <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-[14px] md:text-[15px] leading-[25px]">
-                  Office: 2220 Plymouth Rd #302, Hopkins, Minnesota(MN), 55305
+    <footer className="w-full bg-[#03113A] overflow-hidden">
+  {/* Main footer */}
+  <div className="max-w-[1320px] mx-auto border-b border-[#ffffff14]">
+    <div className="flex flex-col lg:flex-row">
+      
+      {/* LEFT SIDE */}
+      <div 
+      className="w-full lg:w-1/2 px-6 md:px-12 lg:px-[60px] py-16 md:py-24 border-b lg:border-b-0 lg:border-r border-[#ffffff14]"
+      style={{borderRight: '1px solid #293451'}}
+      >
+        <div className="max-w-[520px] flex flex-col gap-10">
+          <img
+            alt="BNOME"
+            width={170}
+            src="https://c.animaapp.com/afwsxCsF/img/container.svg"
+          />
+
+          <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#CDD4EF] text-[15px] leading-[28px]">
+            Wir sind Ihr Partner für moderne Dienstleistungen rund um
+            Gebäude, Betrieb und Unternehmensprozesse.
+          </p>
+
+          <div className="flex flex-col gap-5">
+            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[#CDD4EF] text-[22px]">
+              Comany Information
+            </h3>
+
+            <div className="flex flex-col gap-3">
+              <div className="flex items-start gap-8">
+                <span className="text-[#CDD4EF] text-[14px] min-w-[40px]">
+                  Office:
+                </span>
+
+                <p className="text-[#CDD4EF] text-[14px]">
+                  Schnieglinger Straße 264 90427 Nürnberg
                 </p>
-                <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-[14px] md:text-[15px] leading-[25px]">
-                  Send mail:{" "}
-                  <a
-                    href="mailto:Safebytecompany@gmail.com"
-                    className="hover:text-[white] transition-colors"
-                  >
-                    Safebytecompany@gmail.com
-                  </a>
-                </p>
-                <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-[14px] md:text-[15px] leading-[25px]">
-                  Call us:{" "}
-                  <a
-                    href="tel:2341096666"
-                    className="hover:text-[white] transition-colors"
-                  >
-                    (234) 109-6666
-                  </a>
-                </p>
-              </address>
-            </div>
-            <nav aria-label="Social media" className="flex flex-wrap gap-4">
-              {socialLinks.map((link) => (
+              </div>
+
+              <div className="flex items-start gap-8">
+                <span className="text-[#CDD4EF] text-[14px] min-w-[40px]">
+                  Email:
+                </span>
+
                 <a
-                  key={link.label}
-                  href={link.href}
-                  className="[font-family:'Inter',Helvetica] font-normal text-[#cdd4ef] text-[14px] md:text-[14.5px] leading-[18px] hover:text-[white] transition-colors duration-300"
+                  href="mailto:info@enorm-brandschutz.de"
+                  className="text-[#CDD4EF] text-[14px] hover:opacity-80 transition-opacity"
                 >
-                  {link.label}
+                  info@enorm-brandschutz.de
                 </a>
-              ))}
-            </nav>
+              </div>
+
+              <div className="flex items-start gap-8">
+                <span className="text-[#CDD4EF] text-[14px] min-w-[40px]">
+                  Call us:
+                </span>
+
+                <a
+                  href="tel:091147899960"
+                  className="text-[#CDD4EF] text-[14px] hover:opacity-80 transition-opacity"
+                >
+                  0911 478 999 60
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* Services */}
-          <div className="flex flex-col gap-4">
-            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[white] text-lg md:text-[20px] leading-[33px]">
-              Our Services
+          {/* Socials */}
+          <div className="flex flex-wrap gap-6 pt-4">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="text-[#CDD4EF] text-[14px] hover:text-[#CDD4EF] transition-colors duration-300"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="w-full lg:w-1/2 px-6 md:px-12 lg:px-[60px] py-16 md:py-24 flex flex-col justify-between">
+        
+        {/* top links */}
+        <div className="flex flex-col sm:flex-row gap-12 sm:gap-24">
+          
+          {/* Navigation */}
+          <div className="flex flex-col gap-5">
+            <h3 className="text-[#CDD4EF] text-[22px] font-medium">
+              Navigation
             </h3>
-            <ul className="flex flex-col gap-2.5">
+
+            <ul className="flex flex-col gap-3">
               {serviceLinks.map((item) => (
-                <li key={item}>
+                <li key={item.label}>
                   <a
-                    href="#"
-                    className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-[white] transition-colors duration-300"
+                    href={item.href}
+                    className="text-[#CDD4EF] text-[15px] hover:text-white transition-colors duration-300"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
@@ -105,94 +136,79 @@ export const FooterContactSection = () => {
           </div>
 
           {/* Company */}
-          <div className="flex flex-col gap-4">
-            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[white] text-lg md:text-[20px] leading-[33px]">
+          <div className="flex flex-col gap-5">
+            <h3 className="text-[#CDD4EF] text-[22px] font-medium">
               Company
             </h3>
-            <ul className="flex flex-col gap-2.5">
+
+            <ul className="flex flex-col gap-3">
               {companyLinks.map((item) => (
                 <li key={item}>
                   <a
                     href="#"
-                    className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-[white] transition-colors duration-300"
+                    className="text-[#CDD4EF] text-[15px] hover:text-white transition-colors duration-300"
                   >
                     {item}
                   </a>
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
 
-            {/* Newsletter */}
-            <form className="mt-6" onSubmit={(e) => e.preventDefault()}>
-              <label htmlFor="footer-email" className="sr-only">
-                Email address
-              </label>
-              <div className="relative">
-                <input
-                  id="footer-email"
-                  name="email"
-                  type="email"
-                  placeholder="Don&#39;t miss the latest news..."
-                  aria-label="Email address"
-                  className="w-full h-[50px] md:h-[55px] px-5 bg-white rounded-lg [font-family:'Public_Sans',Helvetica] text-[#111111] text-[14px] md:text-[15px] placeholder:text-[#111111] focus:outline-none focus:ring-2 focus:ring-[#164ac8]"
-                />
-                <button
-                  type="submit"
-                  aria-label="Subscribe"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-3 hover:opacity-70 transition-opacity"
-                >
-                  <img
-                    className="w-4 h-4"
-                    alt=""
-                    src="https://c.animaapp.com/afwsxCsF/img/vector.svg"
-                  />
-                </button>
-              </div>
-            </form>
-            <div className="flex items-start gap-3 mt-3">
-              <div className="flex w-10 h-10 items-center justify-center bg-[#164ac8] rounded-full shrink-0">
-                <div className="w-3.5 h-4 bg-[url(https://c.animaapp.com/afwsxCsF/img/vector-1.svg)] bg-[100%_100%]" />
-              </div>
-              <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[25px]">
-                Please sign up to follow the latest news and events from us, we
-                promise not to spam your inbox.
-              </p>
+        {/* bottom callout */}
+        <div className="mt-16 flex flex-col gap-6">
+          
+          <div className="flex items-start gap-4">
+            <div className="flex w-10 h-10 items-center justify-center bg-[#1272E8] rounded-full shrink-0">
+              <div className="w-3.5 h-4 bg-[url(https://c.animaapp.com/afwsxCsF/img/vector-1.svg)] bg-[100%_100%]" />
             </div>
+
+            <p className="text-[#CDD4EF] text-[15px] leading-[28px] max-w-[700px]">
+              Sie haben ein Projekt oder benötigen ein individuelles Angebot?
+              Wir sind für Sie da
+            </p>
+          </div>
+
+          {/* input */}
+          <div className="flex items-center justify-between bg-[#1B2955] rounded-[8px] h-[60px] px-6">
+            <input
+              type="email"
+              placeholder="Don't miss the laster news from us..."
+              className="bg-transparent outline-none border-none text-[#CDD4EF] placeholder:text-[#CDD4EF] w-full text-[14px]"
+            />
+
+            <button
+              type="submit"
+              className="text-[#CDD4EF] text-[20px] hover:translate-x-1 transition-transform"
+            >
+              →
+            </button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      {/* Bottom bar */}
-      <div className="max-w-[1320px] mx-auto px-6 md:px-12 lg:px-[60px] py-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] text-center md:text-left">
-            Copyright © 2025 Safebyte by{" "}
-            <a href="#" className="text-[white] hover:underline">
-              Case-Themes
-            </a>
-            . All Rights Reserved.
-          </p>
-          <nav
-            aria-label="Legal links"
-            className="flex flex-wrap items-center justify-center gap-2 md:gap-0"
-          >
-            {legalLinks.map((item, index) => (
-              <div key={item} className="flex items-center">
-                <a
-                  href="#"
-                  className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-sm md:text-base leading-[26px] hover:text-[white] transition-colors duration-300 px-2"
-                >
-                  {item}
-                </a>
-                {index < legalLinks.length - 1 && (
-                  <span className="hidden md:block w-px h-4 bg-white" />
-                )}
-              </div>
-            ))}
-          </nav>
-        </div>
-      </div>
-    </footer>
+  {/* Bottom bar */}
+  <div 
+  className=" mx-auto px-6 md:px-12 lg:px-[60px] h-[70px] flex flex-col md:flex-row items-center justify-between gap-4"
+  style={{borderTop: '1px solid #293451', paddingLeft: '18%', paddingRight: '18%'}}
+  >
+    
+    <p className="text-[#CDD4EF] text-[14px] text-center md:text-left">
+      Copyright © 2026 Enorm Services by MetaKreativ.de . All Rights
+      Reserved.
+    </p>
+
+    <a
+      href="#"
+      className="text-[#CDD4EF] text-[14px] hover:text-white transition-colors"
+    >
+      Impressum
+    </a>
+  </div>
+</footer>
   );
 };
 
