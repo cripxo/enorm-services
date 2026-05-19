@@ -34,8 +34,8 @@ export const ServicesGridSection = () => {
     <section
       ref={ref}
       aria-label="Services grid"
-      className="w-full max-w-[1520px] mx-auto px-6 md:px-12 lg:px-0 mt-20"
-      style={{border: '1px solid #E1E6EF'}}
+      className="w-full max-w-[1520px] mx-auto px-6 md:px-12 lg:px-0"
+      style={{border: '1px solid #E1E6EF', marginTop: 150, marginBottom: 50,}}
     >
       <div className="flex flex-col lg:flex-row items-stretch">
         {/* Left panel */}

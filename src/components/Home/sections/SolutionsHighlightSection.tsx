@@ -1,21 +1,25 @@
 import { useScrollAnimation } from "../../GlobalComponents/useScrollAnimation";
+import peopleIcon from "../../../assets/svgs/people_icon.svg";
+import guardIcon from "../../../assets/svgs/guard_icon.svg";
+import clockIcon from "../../../assets/svgs/clock_icon.svg";
+import achievmentIcon from "../../../assets/svgs/achievment_icon.svg";
 
 const solutionItems = [
   {
     title: "Individuelle Lösungen",
-    iconSrc: "https://c.animaapp.com/afwsxCsF/img/component-2-7.svg",
+    iconSrc: peopleIcon,
   },
   {
     title: "Zuverlässig & Verantwortungsvoll",
-    iconSrc: "https://c.animaapp.com/afwsxCsF/img/component-2-7.svg",
+    iconSrc: guardIcon,
   },
   {
     title: "Flexibel & Schnell",
-    iconSrc: "https://c.animaapp.com/afwsxCsF/img/component-2-7.svg",
+    iconSrc: clockIcon,
   },
   {
     title: "Höchste Qualitätsstandards",
-    iconSrc: "https://c.animaapp.com/afwsxCsF/img/component-2-7.svg",
+    iconSrc: achievmentIcon,
   },
 ];
 
@@ -28,10 +32,10 @@ export const SolutionsHighlightSection = () => {
       aria-labelledby="solutions-highlight-heading"
       className="w-full max-w-[1520px] mx-auto px-6 md:px-12 lg:px-0 py-16 md:py-24"
     >
-      <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-0">
+      <div className="flex flex-col lg:flex-row items-center gap-20 lg:gap-0">
         {/* Left content */}
         <div
-          className={`flex flex-col w-full lg:w-1/2 gap-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
+          className={`p-4 pr-20 flex flex-col w-full lg:w-1/2 gap-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
         >
           <h2
             id="solutions-highlight-heading"
@@ -52,19 +56,21 @@ export const SolutionsHighlightSection = () => {
             nachhaltig zu gestalten.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
             {solutionItems.map((item, index) => (
               <article
                 key={item.title}
-                className="flex flex-col items-center justify-center gap-3 p-4 relative transition-all duration-500"
-                style={{ transitionDelay: `${index * 100 + 300}ms` }}
+                className="flex flex-col items-center justify-between gap-3 relative transition-all duration-500 pl-2 pr-2"
+                style={{ transitionDelay: `${index * 100 + 300}ms`, borderRight: '2px solid #edf0f5' }}
               >
                 <div
-                  className={`flex w-[60px] h-[60px] md:w-[70px] md:h-[70px] items-center justify-center bg-[#164ac8] rounded-full transition-all duration-700 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
+                  className={`flex w-[60px] h-[60px] md:w-[70px] md:h-[70px] items-center justify-center rounded-full transition-all duration-700 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
                   style={{ transitionDelay: `${index * 100 + 300}ms` }}
                 >
                   <img
-                    className="w-8 h-8 md:w-9 md:h-9"
+                    className="md:w-9 md:h-9"
+                    width={40}
+                    height={40}
                     alt=""
                     aria-hidden="true"
                     src={item.iconSrc}
@@ -74,13 +80,13 @@ export const SolutionsHighlightSection = () => {
                   {item.title}
                 </span>
                 {index < solutionItems.length - 1 && (
-                  <div className="hidden md:block absolute top-[22%] right-0 w-px h-[6px] bg-[#164ac8] rounded-full" />
+                  <div className="hidden md:block absolute right-[-4px] top-[30px] w-[6px] h-[6px] bg-[#1272E8] rounded-full" />
                 )}
               </article>
             ))}
           </div>
 
-          <div>
+          <div className="mt-4">
             <a
               href="#"
               className="inline-flex h-12 px-8 md:px-[42px] bg-[#164ac8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
@@ -104,9 +110,9 @@ export const SolutionsHighlightSection = () => {
               src="https://c.animaapp.com/afwsxCsF/img/image-1.png"
             />
             {/* Stats card */}
-            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 flex flex-col items-center justify-center p-8 md:p-12 bg-[#164ac8] rounded-lg shadow-2xl">
+            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 flex flex-col items-center justify-center p-8 md:p-12 bg-[#1272E8] rounded-lg shadow-2xl gap-[10px] p-[52px]">
               <img
-                className="w-12 h-12 md:w-16 md:h-16 mb-4"
+                className="w-12 h-12 md:w-16 md:h-16"
                 alt=""
                 aria-hidden="true"
                 src="https://c.animaapp.com/afwsxCsF/img/component-5.svg"
