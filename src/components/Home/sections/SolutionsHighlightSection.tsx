@@ -3,6 +3,7 @@ import peopleIcon from "../../../assets/svgs/people_icon.svg";
 import guardIcon from "../../../assets/svgs/guard_icon.svg";
 import clockIcon from "../../../assets/svgs/clock_icon.svg";
 import achievmentIcon from "../../../assets/svgs/achievment_icon.svg";
+import lockIcon from "../../../assets/svgs/lock_icon.svg";
 
 const solutionItems = [
   {
@@ -105,25 +106,26 @@ export const SolutionsHighlightSection = () => {
         >
           <div className="relative">
             <img
-              className="w-full h-[400px] md:h-[500px] lg:h-[700px] object-cover rounded-lg"
+              className="w-[880px] h-[400px] md:h-[500px] lg:h-[700px] object-cover rounded-lg ml-12"
               alt="Modernes Gebäude bei Nacht"
               src="https://c.animaapp.com/afwsxCsF/img/image-1.png"
             />
             {/* Stats card */}
-            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 flex flex-col items-center justify-center p-8 md:p-12 bg-[#1272E8] rounded-lg shadow-2xl gap-[10px] p-[52px]">
+            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-[0] flex flex-col items-center justify-center p-8 pt-7 pb-7 pl-15 pr-15 bg-[#1272E8] rounded-lg shadow-2xl gap-[10px] p-[52px]">
               <img
                 className="w-12 h-12 md:w-16 md:h-16"
                 alt=""
                 aria-hidden="true"
-                src="https://c.animaapp.com/afwsxCsF/img/component-5.svg"
+                src={lockIcon}
               />
-              <div className="[font-family:'Public_Sans',Helvetica] font-normal text-[white] text-[50px] md:text-[70px] text-center leading-[70px]">
-                17+
-              </div>
+             <div className="[font-family:'Public_Sans',Helvetica] font-normal text-[white] text-[50px] md:text-[70px] text-center leading-[70px]">
+  28
+  <span className="text-[34px] align-super leading-none ml-1">+</span>
+</div>
               <p className="[font-family:'Inter',Helvetica] font-normal text-[white] text-sm md:text-[17px] text-center leading-[28px] mt-2">
-                years of experience
+                Jahre Erfahrung
                 <br />
-                since at 1996
+                seit 1996
               </p>
             </div>
           </div>
