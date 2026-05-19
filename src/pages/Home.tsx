@@ -8,8 +8,8 @@ import SolutionsHighlightSection from "../components/Home/sections/SolutionsHigh
 import TopNavigationSection from "../components/Home/sections/TopNavigationSection";
 
 const pageSections = [
-  { id: "hero-banner", component: HeroBannerSection },
   { id: "top-navigation", component: TopNavigationSection },
+  { id: "hero-banner", component: HeroBannerSection },
   { id: "services-grid", component: ServicesGridSection },
   { id: "solutions-highlight", component: SolutionsHighlightSection },
   { id: "industry-segments", component: IndustrySegmentsSection },

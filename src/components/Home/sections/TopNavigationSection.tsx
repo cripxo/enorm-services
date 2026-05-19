@@ -12,7 +12,7 @@ export const TopNavigationSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 flex h-[80px] lg:h-[100px] w-full items-center justify-center bg-[#15181d33] px-6 md:px-12 lg:px-[200px] py-0 backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)] animate-fade-in">
+    <header className="sticky top-0 z-50 flex h-[80px] lg:h-[100px] w-full items-center justify-center bg-[red] px-6 md:px-12 lg:px-[200px] py-0 backdrop-blur-[25px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(25px)_brightness(100%)] animate-fade-in">
       <div className="flex w-full items-center justify-center">
         <div className="flex w-full max-w-[1510px] items-center justify-between gap-4">
           <a
