@@ -1,23 +1,22 @@
+import { Link } from "react-router-dom";
+import left_arrow from "../../../assets/svgs/left-arrow-icon.svg"
+
 const socialLinks = [
-  { label: "Facebook", href: "#" },
-  { label: "Twitter / X", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "Skype", href: "#" },
-  { label: "Telegram", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/enorm_services/" },
+  { label: "Linkedin", href: "#" },
 ];
 
 const serviceLinks = [
-  { label: "Startseite", href: "#" },
-  { label: "Gebäudereinigung", href: "#" },
-  { label: "AI Solutions", href: "#" },
-  { label: "Brandschutz", href: "#" },
+  { label: "Startseite", href: "/" },
+  { label: "Gebäudereinigung", href: "/gebaudereinigung" },
+  { label: "AI Solutions", href: "/ai-solutions" },
+  { label: "Brandschutz", href: "/brandschutz" },
 ];
 
 const companyLinks = [
-  "Über uns",
-  "Kontakt",
-  "Datenschutz",
-  "Careers",
+  { label: "Über uns", href: "/uber-uns" },
+  { label: "Kontakts", href: "/uber-uns" },
+  { label: "Datenschutz", href: "/uber-uns" },
 ];
 
 const legalLinks = [
@@ -30,7 +29,7 @@ export const FooterContactSection = () => {
   return (
     <footer className="w-full bg-[#03113A] overflow-hidden">
   {/* Main footer */}
-  <div className="max-w-[1320px] mx-auto border-b border-[#ffffff14]">
+  <div className="max-w-[1600px] mx-auto border-b border-[#ffffff14]">
     <div className="flex flex-col lg:flex-row">
       
       {/* LEFT SIDE */}
@@ -51,8 +50,8 @@ export const FooterContactSection = () => {
           </p>
 
           <div className="flex flex-col gap-5">
-            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[#CDD4EF] text-[22px]">
-              Comany Information
+            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[#CDD4EF] text-[20px]">
+              Info & Kontakt
             </h3>
 
             <div className="flex flex-col gap-3">
@@ -61,8 +60,8 @@ export const FooterContactSection = () => {
                   Office:
                 </span>
 
-                <p className="text-[#CDD4EF] text-[14px]">
-                  Schnieglinger Straße 264 90427 Nürnberg
+                <p className="text-[#CDD4EF] text-[16px]">
+                  Löffelholzstraße 20 / Haus 6   |   90441 Nürnberg
                 </p>
               </div>
 
@@ -72,23 +71,35 @@ export const FooterContactSection = () => {
                 </span>
 
                 <a
-                  href="mailto:info@enorm-brandschutz.de"
-                  className="text-[#CDD4EF] text-[14px] hover:opacity-80 transition-opacity"
+                  href="mailto:info@enorm-services.de"
+                  className="text-[#CDD4EF] text-[16px] hover:opacity-80 transition-opacity"
                 >
-                  info@enorm-brandschutz.de
+                  info@enorm-services.de
                 </a>
               </div>
 
               <div className="flex items-start gap-8">
                 <span className="text-[#CDD4EF] text-[14px] min-w-[40px]">
-                  Call us:
+                  Telefon:
                 </span>
 
                 <a
-                  href="tel:091147899960"
-                  className="text-[#CDD4EF] text-[14px] hover:opacity-80 transition-opacity"
+                  href="tel:09119405530"
+                  className="text-[#CDD4EF] text-[16px] hover:opacity-80 transition-opacity"
                 >
-                  0911 478 999 60
+                  + 49 (0) 911 94 055 30
+                </a>
+              </div>
+              <div className="flex items-start gap-8">
+                <span className="text-[#CDD4EF] text-[14px] min-w-[40px]">
+                  Fax:
+                </span>
+
+                <a
+                  href="tel:09119405531"
+                  className="text-[#CDD4EF] text-[16px] hover:opacity-80 transition-opacity"
+                >
+                  + 49 (0) 911 94 055 31
                 </a>
               </div>
             </div>
@@ -98,12 +109,14 @@ export const FooterContactSection = () => {
           <div className="flex flex-wrap gap-6 pt-4">
             {socialLinks.map((link) => (
               <a
-                key={link.label}
-                href={link.href}
-                className="text-[#CDD4EF] text-[14px] hover:text-[#CDD4EF] transition-colors duration-300"
-              >
-                {link.label}
-              </a>
+      key={link.label}
+      href={link.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#CDD4EF] text-[14px] hover:text-[#CDD4EF] transition-colors duration-300"
+    >
+      {link.label}
+    </a>
             ))}
           </div>
         </div>
@@ -117,19 +130,19 @@ export const FooterContactSection = () => {
           
           {/* Navigation */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-[#CDD4EF] text-[22px] font-medium">
+            <h3 className="text-[#fff] text-[20px] font-medium">
               Navigation
             </h3>
 
             <ul className="flex flex-col gap-3">
               {serviceLinks.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="text-[#CDD4EF] text-[15px] hover:text-white transition-colors duration-300"
+                  <Link
+                    to={item.href}
+                    className="text-[#CDD4EF] text-[16px] hover:text-[white] transition-colors duration-300"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -137,20 +150,18 @@ export const FooterContactSection = () => {
 
           {/* Company */}
           <div className="flex flex-col gap-5">
-            <h3 className="text-[#CDD4EF] text-[22px] font-medium">
+            <h3 className="text-[#fff] text-[20px] font-medium">
               Company
             </h3>
 
             <ul className="flex flex-col gap-3">
               {companyLinks.map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="text-[#CDD4EF] text-[15px] hover:text-white transition-colors duration-300"
+                <Link
+                    to={item.href}
+                    className="text-[#CDD4EF] text-[16px] hover:text-[white] transition-colors duration-300"
                   >
-                    {item}
-                  </a>
-                </li>
+                    {item.label}
+                  </Link>
               ))}
             </ul>
           </div>
@@ -164,25 +175,24 @@ export const FooterContactSection = () => {
               <div className="w-3.5 h-4 bg-[url(https://c.animaapp.com/afwsxCsF/img/vector-1.svg)] bg-[100%_100%]" />
             </div>
 
-            <p className="text-[#CDD4EF] text-[15px] leading-[28px] max-w-[700px]">
-              Sie haben ein Projekt oder benötigen ein individuelles Angebot?
-              Wir sind für Sie da
+            <p className="text-[#CDD4EF] text-[16px] leading-[28px] max-w-[700px]">
+              Sie haben ein Projekt oder benötigen ein individuelles Angebot? Wir sind für Sie da
             </p>
           </div>
 
           {/* input */}
-          <div className="flex items-center justify-between bg-[#1B2955] rounded-[8px] h-[60px] px-6">
+          <div className="flex items-center justify-between bg-[#1B2955] rounded-[8px] h-[56px] pl-6 pr-[2px] w-[270px]">
             <input
               type="email"
-              placeholder="Don't miss the laster news from us..."
+              placeholder="Jetzt anfragen"
               className="bg-transparent outline-none border-none text-[#CDD4EF] placeholder:text-[#CDD4EF] w-full text-[14px]"
             />
 
             <button
               type="submit"
-              className="text-[#CDD4EF] text-[20px] hover:translate-x-1 transition-transform"
+              className="text-[#CDD4EF] text-[20px] hover:translate-x-1 transition-transform bg-[#04113266] py-[20px] px-[30px] rounded-[6px]"
             >
-              →
+              {left_arrow ? <img src={left_arrow}/> : '→'}
             </button>
           </div>
         </div>
@@ -191,22 +201,23 @@ export const FooterContactSection = () => {
   </div>
 
   {/* Bottom bar */}
+  <div  style={{borderTop: '1px solid #293451'}}>
   <div 
-  className=" mx-auto px-6 md:px-12 lg:px-[60px] h-[70px] flex flex-col md:flex-row items-center justify-between gap-4"
-  style={{borderTop: '1px solid #293451', paddingLeft: '18%', paddingRight: '18%'}}
-  >
+  className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-[60px] h-[70px] flex flex-col md:flex-row items-center justify-between gap-4">
     
     <p className="text-[#CDD4EF] text-[14px] text-center md:text-left">
-      Copyright © 2026 Enorm Services by MetaKreativ.de . All Rights
+      Copyright © 2026 Enorm Services by <text className="text-[#EFF2FF]">MetaKreativ.de</text> . All Rights
       Reserved.
     </p>
 
     <a
       href="#"
-      className="text-[#CDD4EF] text-[14px] hover:text-white transition-colors"
+      className="text-[#CDD4EF] text-[14px] hover:text-[white] transition-colors"
     >
       Impressum
     </a>
+  </div>
+
   </div>
 </footer>
   );

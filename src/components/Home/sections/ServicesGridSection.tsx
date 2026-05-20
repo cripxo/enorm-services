@@ -2,6 +2,9 @@ import { useScrollAnimation } from "../../GlobalComponents/useScrollAnimation";
 import handIcon from "../../../assets/svgs/hand_icon.svg";
 import aiSolutionIcon from "../../../assets/svgs/ai_solution_icon.svg";
 import flareIcon from "../../../assets/svgs/flare_icon.svg";
+import aiIcon from "../../../assets/images/ai-img.webp";
+import secIcon from "../../../assets/images/security-img.webp";
+import cleaningIcon from "../../../assets/images/cleaning-img.webp";
 import CardIcon from "../../GlobalComponents/CardIcon";
 
 const services = [
@@ -9,22 +12,22 @@ const services = [
     title: "Gebäudereinigung",
     description:
       "Sauberkeit schafft Werte. Wir sorgen für hygeinische und reprasentative Umgebungen.",
-    image: "https://c.animaapp.com/afwsxCsF/img/container-1@2x.png",
+    image: cleaningIcon,
     icon: handIcon,
-  },
-  {
-    title: "Ai Solutions",
-    description:
-      "Sauberkeit schafft Werte. Wir sorgen für hygeinische und reprasentative Umgebungen.",
-    image: "https://c.animaapp.com/afwsxCsF/img/container-2@2x.png",
-    icon: aiSolutionIcon,
   },
   {
     title: "Brandschutz",
     description:
-      "Sauberkeit schafft Werte. Wir sorgen für hygeinische und reprasentative Umgebungen.",
-    image: "https://c.animaapp.com/afwsxCsF/img/container-3@2x.png",
+      "Sicherheit ist Verantwortung. Wir unterstützen Sie bei Schutzkonzepten, Kontrollen und Dokumentationen.",
+    image: secIcon,
     icon: flareIcon,
+  },
+  {
+    title: "Softwarelösungen",
+    description:
+      "Intelligente Prozesse für mehr Effizienz, Transparenz und Kontrolle in Ihrem Unternehmen.",
+    image: aiIcon,
+    icon: aiSolutionIcon,
   },
 ];
 

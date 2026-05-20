@@ -51,7 +51,7 @@ export const SolutionsHighlightSection = () => {
 
           <div className="h-px w-full bg-[#d3d5d6]" />
 
-          <p className="[font-family:'Google_Sans',Helvetica] font-normal text-[#666666] text-base leading-[26px] max-w-[700px]">
+          <p className="[font-family:'Google_Sans',Helvetica] font-normal text-[#666666] text-[18px] leading-[26px] max-w-[700px]">
             Wir verbinden Menschen, Technik und Prozesse, um den Betrieb von
             Immobilien, Unternehmen und Veranstaltungen effizienter, sicher und
             nachhaltig zu gestalten.
@@ -119,13 +119,13 @@ export const SolutionsHighlightSection = () => {
                 src={lockIcon}
               />
              <div className="[font-family:'Public_Sans',Helvetica] font-normal text-[white] text-[50px] md:text-[70px] text-center leading-[70px]">
-  28
+  20
   <span className="text-[34px] align-super leading-none ml-1">+</span>
 </div>
               <p className="[font-family:'Inter',Helvetica] font-normal text-[white] text-sm md:text-[17px] text-center leading-[28px] mt-2">
                 Jahre Erfahrung
                 <br />
-                seit 1996
+                seit 2005
               </p>
             </div>
           </div>

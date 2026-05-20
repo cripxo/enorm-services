@@ -18,7 +18,7 @@ export const TopNavigationSection = ({className = ''}:NavigationSectionInterface
   const location = useLocation();
 
   return (
-    <header className={`sticky top-0 z-50 flex h-[80px] lg:h-[100px] w-full items-center justify-center px-6 md:px-12 lg:px-[200px] py-0 animate-fade-in backdrop-blur-[50px] ${className}`}>
+    <header className={`fixed top-0 z-50 flex h-[80px] lg:h-[100px] w-full items-center justify-center px-6 md:px-12 lg:px-[200px] py-0 animate-fade-in backdrop-blur-[50px] ${className}`}>
       <div className="flex w-full items-center justify-center">
         <div className="flex w-full max-w-[1510px] items-center justify-between gap-4">
           <Link
@@ -80,8 +80,8 @@ export const TopNavigationSection = ({className = ''}:NavigationSectionInterface
           </nav>
 
           <a
-            href="tel:071187999960"
-            aria-label="Rufen Sie uns an unter 0711 879 999 60"
+            href="tel:0499119405530"
+            aria-label="Rufen Sie uns an unter 0499 119 405 530"
             className="hidden md:flex h-[50px] items-center gap-4 hover:opacity-80 transition-opacity duration-300 focus-visible:rounded-[48px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
           >
             <span className="flex h-12 w-12 items-center justify-center rounded-[48px] bg-[#1272E8]">
@@ -96,7 +96,7 @@ export const TopNavigationSection = ({className = ''}:NavigationSectionInterface
             </span>
 
             <span className="[font-family:'Plus_Jakarta_Sans',Helvetica] text-base font-normal leading-5 tracking-[0] text-[white] whitespace-nowrap">
-              0711 879 999 60
+              + 49 (0) 911 94 055 30
             </span>
           </a>
         </div>
