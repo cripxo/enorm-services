@@ -9,12 +9,16 @@ const navigationItems = [
   { label: "Über uns", href: "/uber-uns" },
 ];
 
-export const TopNavigationSection = () => {
+export interface NavigationSectionInterface{
+  className?:string;
+}
+
+export const TopNavigationSection = ({className = ''}:NavigationSectionInterface) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 flex h-[80px] lg:h-[100px] w-full items-center justify-center px-6 md:px-12 lg:px-[200px] py-0 animate-fade-in backdrop-blur-[50px]">
+    <header className={`sticky top-0 z-50 flex h-[80px] lg:h-[100px] w-full items-center justify-center px-6 md:px-12 lg:px-[200px] py-0 animate-fade-in backdrop-blur-[50px] ${className}`}>
       <div className="flex w-full items-center justify-center">
         <div className="flex w-full max-w-[1510px] items-center justify-between gap-4">
           <Link

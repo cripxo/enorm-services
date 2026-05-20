@@ -2,6 +2,7 @@ import { useScrollAnimation } from "../../GlobalComponents/useScrollAnimation";
 import handIcon from "../../../assets/svgs/hand_icon.svg";
 import aiSolutionIcon from "../../../assets/svgs/ai_solution_icon.svg";
 import flareIcon from "../../../assets/svgs/flare_icon.svg";
+import CardIcon from "../../GlobalComponents/CardIcon";
 
 const services = [
   {
@@ -77,13 +78,14 @@ export const ServicesGridSection = () => {
                 style={{ backgroundImage: `url(${service.image})` }}
                 aria-hidden="true"
               >
-                <div className="absolute bottom-[-60px] left-10 w-[100px] h-[100px] flex items-center justify-center bg-[white] rounded-[20px] p-[30px]">
+                {/* <div className="absolute bottom-[-60px] left-10 w-[100px] h-[100px] flex items-center justify-center bg-[white] rounded-[20px] p-[30px]">
                   <img
                     className="w-[48px] h-[48px]"
                     alt=""
                     src={service.icon}
                   />
-                </div>
+                </div> */}
+                <CardIcon icon={service.icon} className="bottom-[-60px] left-[40px]"/>
               </div>
               <div className="w-full p-12">
                 <h3 className="[font-family:'Google_Sans',Helvetica] font-medium text-[#111111] text-xl md:text-2xl leading-[45px]">

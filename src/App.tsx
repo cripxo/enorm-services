@@ -1,3 +1,4 @@
+import BuldingCleaning from './pages/BuldingCleaning';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -7,6 +8,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/gebaudereinigung" element={<BuldingCleaning />} />
         </Routes>
       </div>
     </BrowserRouter>
