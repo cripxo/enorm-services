@@ -46,7 +46,7 @@ export const ServicesGridSection = () => {
         <div
           className={`flex flex-col items-start justify-between p-8 md:p-12 lg:w-[380px] transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
         >
-          <div>
+          <div className="flex sm:block gap-2">
             <h2 className="[font-family:'Google_Sans',Helvetica] font-medium text-[#02142c] text-[28px] md:text-[35px] leading-[44.8px]">
               Unsere
             </h2>
@@ -58,7 +58,7 @@ export const ServicesGridSection = () => {
           </div>
           <a
             href="#"
-            className="inline-flex px-8 md:px-10 py-4 bg-[#1272E8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105 mt-8"
+            className="inline-flex px-8 md:px-10 py-4 bg-[#1272E8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105 mt-8 scale-[0.8] sm:scale-[1]"
             aria-label="View all services"
           >
             <span className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[13.7px] text-center tracking-[0.60px] whitespace-nowrap">

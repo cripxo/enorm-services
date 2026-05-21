@@ -36,11 +36,11 @@ export const SolutionsHighlightSection = () => {
       <div className="flex flex-col lg:flex-row items-center gap-20 lg:gap-0">
         {/* Left content */}
         <div
-          className={`p-4 pr-20 flex flex-col w-full lg:w-1/2 gap-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
+          className={`p-4 pr-0 sm:pr-20 flex flex-col w-full lg:w-1/2 gap-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
         >
           <h2
             id="solutions-highlight-heading"
-            className="[font-family:'Google_Sans',Helvetica] font-medium text-[#0a1119] text-[32px] md:text-[40px] lg:text-5xl leading-[1.25]"
+            className="[font-family:'Google_Sans',Helvetica] font-medium text-[#0a1119] text-[26px] md:text-[40px] lg:text-5xl leading-[1.25]"
           >
             Moderne Lösungen für
             <br />
@@ -87,7 +87,7 @@ export const SolutionsHighlightSection = () => {
             ))}
           </div>
 
-          <div className="mt-4">
+          <div className="mt-4 text-center sm:text-left">
             <a
               href="#"
               className="inline-flex h-12 px-8 md:px-[42px] bg-[#164ac8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
@@ -106,23 +106,23 @@ export const SolutionsHighlightSection = () => {
         >
           <div className="relative">
             <img
-              className="w-[880px] h-[400px] md:h-[500px] lg:h-[700px] object-cover rounded-lg ml-12"
+              className="w-[880px] h-[400px] md:h-[500px] lg:h-[700px] object-cover rounded-lg ml-0 sm:ml-12"
               alt="Modernes Gebäude bei Nacht"
               src="https://c.animaapp.com/afwsxCsF/img/image-1.png"
             />
             {/* Stats card */}
-            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-[0] flex flex-col items-center justify-center p-8 pt-7 pb-7 pl-15 pr-15 bg-[#1272E8] rounded-lg shadow-2xl gap-[10px] p-[52px]">
+            <div className="absolute bottom-0 sm:bottom-8 left-0 sm:left-8 md:bottom-12 md:left-[0] flex flex-col items-center justify-center p-8 pt-3 sm:pt-7 pb-3 sm:pb-7 pl-6 sm: pl-15 pr-6 sm:pr-15 bg-[#1272E8] rounded-lg shadow-2xl gap-[0px] sm:gap-[10px] p-[52px]">
               <img
-                className="w-12 h-12 md:w-16 md:h-16"
+                className="w-10 h-10 md:w-16 md:h-16"
                 alt=""
                 aria-hidden="true"
                 src={lockIcon}
               />
-             <div className="[font-family:'Public_Sans',Helvetica] font-normal text-[white] text-[50px] md:text-[70px] text-center leading-[70px]">
+             <div className="[font-family:'Public_Sans',Helvetica] font-normal text-[white] text-[30px] md:text-[70px] text-center leading-[70px]">
   20
   <span className="text-[34px] align-super leading-none ml-1">+</span>
 </div>
-              <p className="[font-family:'Inter',Helvetica] font-normal text-[white] text-sm md:text-[17px] text-center leading-[28px] mt-2">
+              <p className="[font-family:'Inter',Helvetica] font-normal text-[white] text-[11px] md:text-[17px] text-center leading-[28px] mt-0 sm:mt-2">
                 Jahre Erfahrung
                 <br />
                 seit 2005

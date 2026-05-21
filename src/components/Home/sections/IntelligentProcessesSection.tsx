@@ -35,7 +35,7 @@ export const IntelligentProcessesSection = () => {
               }}
             />
           </div>
-              <div>
+              <div className="hidden sm:block">
                 <img
           alt="arrow"
           className="mb-20"
@@ -60,12 +60,12 @@ export const IntelligentProcessesSection = () => {
           >
             <h2
               id="intelligent-processes-heading"
-              className="[font-family:'Google_Sans',Helvetica] font-medium text-[white] text-[28px] md:text-[34px] lg:text-[40px] leading-[1.3]"
+              className="[font-family:'Google_Sans',Helvetica] font-medium text-[white] text-[22px] md:text-[34px] lg:text-[40px] leading-[1.3]"
             >
               Intelligente Prozesse. Bessere Entscheidungen. Nachhaltige
               Ergebnisse.
             </h2>
-            <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-base md:text-lg leading-[30px]">
+            <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#cdd4ef] text-base text-[12px] md:text-lg leading-[30px]">
               Mit unseren digitalen Lösungen optimieren wir Abläufe, analysieren
               Daten in Echtzeit und schaffen Transparenz in allen Bereichen.
             </p>

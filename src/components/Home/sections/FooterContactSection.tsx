@@ -42,15 +42,16 @@ export const FooterContactSection = () => {
             alt="BNOME"
             width={170}
             src="https://c.animaapp.com/afwsxCsF/img/container.svg"
+            className="mx-auto sm:mx-0 pl-10 sm:pl-0"
           />
 
-          <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#CDD4EF] text-[15px] leading-[28px]">
+          <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#CDD4EF] text-[15px] leading-[28px] text-center sm:text-left">
             Wir sind Ihr Partner für moderne Dienstleistungen rund um
             Gebäude, Betrieb und Unternehmensprozesse.
           </p>
 
           <div className="flex flex-col gap-5">
-            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[#CDD4EF] text-[20px]">
+            <h3 className="[font-family:'Inter',Helvetica] font-medium text-[#CDD4EF] text-[20px] text-center sm:text-left">
               Info & Kontakt
             </h3>
 
@@ -106,7 +107,7 @@ export const FooterContactSection = () => {
           </div>
 
           {/* Socials */}
-          <div className="flex flex-wrap gap-6 pt-4">
+          <div className="flex flex-wrap gap-6 pt-4 justify-center sm:justify-left">
             {socialLinks.map((link) => (
               <a
       key={link.label}
@@ -126,7 +127,7 @@ export const FooterContactSection = () => {
       <div className="w-full lg:w-1/2 px-6 md:px-12 lg:px-[60px] py-16 md:py-24 flex flex-col justify-between">
         
         {/* top links */}
-        <div className="flex flex-col sm:flex-row gap-12 sm:gap-24">
+        <div className="flex flex-row gap-12 sm:gap-24 justify-center sm:justify-left">
           
           {/* Navigation */}
           <div className="flex flex-col gap-5">
@@ -181,7 +182,7 @@ export const FooterContactSection = () => {
           </div>
 
           {/* input */}
-          <div className="flex items-center justify-between bg-[#1B2955] rounded-[8px] h-[56px] pl-6 pr-[2px] w-[270px]">
+          <div className="flex items-center justify-between bg-[#1B2955] rounded-[8px] h-[56px] pl-6 pr-[2px] w-[270px] ml-7 sm:ml-0">
             <input
               type="email"
               placeholder="Jetzt anfragen"
@@ -212,7 +213,7 @@ export const FooterContactSection = () => {
 
     <a
       href="#"
-      className="text-[#CDD4EF] text-[14px] hover:text-[white] transition-colors"
+      className="hidden sm:block text-[#CDD4EF] text-[14px] hover:text-[white] transition-colors"
     >
       Impressum
     </a>

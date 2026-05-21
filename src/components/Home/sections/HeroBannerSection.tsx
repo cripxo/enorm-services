@@ -29,7 +29,7 @@ export const HeroBannerSection = ()=> {
           <p className="flex h-5 items-center whitespace-nowrap [font-family:'Inter',Helvetica] text-[12px] md:text-[13.8px] font-medium tracking-[5.00px] text-[#1172e7]">
             DAMIT ALLES LÄUFT.
           </p>
-          <h1 className="[font-family:'FONTSPRING_DEMO_-_Tactic_Sans_Exd_Reg-Regular',Helvetica] text-[48px] md:text-[64px] lg:text-[80px] font-normal leading-[1] tracking-[0] text-[white]">
+          <h1 className="[font-family:'FONTSPRING_DEMO_-_Tactic_Sans_Exd_Reg-Regular',Helvetica] text-[38px] md:text-[64px] lg:text-[80px] font-normal leading-[1] tracking-[0] text-[white]">
             ENORM
             <br />
             SERVICES
@@ -55,7 +55,7 @@ export const HeroBannerSection = ()=> {
                   className={
                     isPrimary
                       ? "inline-flex h-[48px] md:h-[52px] items-center justify-center overflow-hidden rounded-lg bg-[#1272E8] px-6 md:px-10 hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
-                      : "inline-flex h-[48px] md:h-[52px] items-center justify-center overflow-hidden rounded-lg border-2 border-solid border-[white] px-5 md:px-[30px] hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                      : "inline-flex h-[48px] md:h-[52px] items-center justify-center overflow-hidden rounded-lg border-2 border-solid border-[white] px-7 sm:px-5 md:px-[30px] hover:bg-white/10 transition-all duration-300 hover:scale-105"
                   }
                   aria-label={button.label}
                 >

@@ -29,9 +29,9 @@ export const BrandProtectionSection = () => {
       >
         {/* Left card */}
         <div className="flex-1 flex flex-col md:flex-row items-center gap-6 p-8 md:p-10 rounded-[25px] bg-[linear-gradient(270deg,rgba(13,37,101,1)_0%,rgba(32,74,176,1)_100%)]">
-          <div className="w-full md:w-60 h-[180px] md:h-[200px] rounded-[15px] overflow-hidden shrink-0">
+          <div className="w-40 md:w-60 h-[180px] md:h-[200px] rounded-[15px] overflow-hidden shrink-0">
             <img
-              className="w-full h-full object-cover"
+              className="w-50 h-50 sm:w-full sm:h-full object-cover"
               alt={brandProtectionContent.image.alt}
               src={brandProtectionContent.image.src}
             />
@@ -58,7 +58,7 @@ export const BrandProtectionSection = () => {
             aria-label={brandProtectionContent.cta.label}
             className="inline-flex px-6 md:px-[35px] py-3 bg-[#1272E8] items-center justify-center rounded-lg overflow-hidden hover:bg-[#1a56e0] transition-all duration-300 hover:scale-105"
           >
-            <span className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[13px] md:text-[14.2px] text-center tracking-[0.60px] whitespace-nowrap">
+            <span className="[font-family:'Inter',Helvetica] font-medium text-[white] text-[10px] sm:text-[14.2px] text-center tracking-[0.60px] whitespace-nowrap">
               {brandProtectionContent.cta.label}
             </span>
           </a>

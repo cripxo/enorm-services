@@ -46,7 +46,7 @@ export const IndustrySegmentsSection = () => {
     <section
       ref={ref}
       aria-labelledby="industry-segments-heading"
-      className="w-full px-6 md:px-12 lg:px-[50px] py-16 md:py-24"
+      className="w-full px-0 md:px-12 lg:px-[50px] py-6 md:py-24"
     >
       <div className="max-w-[2000px] mx-auto flex flex-col items-center justify-center py-12 md:py-[90px] px-6 md:px-12 lg:px-[250px] rounded-[30px] bg-[linear-gradient(180deg,#DBE6FC_0%,#FAFCFF_100%)]">
         <header
@@ -59,22 +59,22 @@ export const IndustrySegmentsSection = () => {
           </span>
           <h2
             id="industry-segments-heading"
-            className="[font-family:'Google_Sans',Helvetica] font-medium text-[#0a1119] text-[28px] md:text-[36px] lg:text-5xl text-center leading-[1.25] max-w-[700px]"
+            className="[font-family:'Google_Sans',Helvetica] font-medium text-[#0a1119] text-[20px] md:text-[36px] lg:text-5xl text-left sm:text-center leading-[1.25] max-w-[700px]"
           >
             Lösungen für verschiedene
             <br />
             Branchen und Gebäudetypen
           </h2>
-          <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#666666] text-base md:text-lg text-center leading-[30px]">
+          <p className="[font-family:'Public_Sans',Helvetica] font-normal text-[#666666] text-base text-sm md:text-lg text-center leading-[30px]">
             Von modernen Bürogebäuden bis hin zu Industrieeinrichtungen - wir bieten umfassende Services für alle Anforderungen.
           </p>
         </header>
 
-        <ul className="flex flex-wrap justify-center gap-3 md:gap-5 mt-6">
+        <ul className="flex flex-wrap justify-center gap-0 md:gap-5 mt-6">
           {industrySegments.map((segment, index) => (
             <li
               key={segment.label}
-              className={`inline-flex h-[55px] md:h-[65px] items-center gap-3 md:gap-4 pl-[7px] pr-6 md:pr-[35px] bg-[white] rounded-[32px] border border-solid border-[#dcdcdc] list-none hover:shadow-md hover:border-[#164ac8] transition-all duration-300 hover:-translate-y-1 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+              className={`inline-flex h-[55px] md:h-[65px] items-center gap-3 md:gap-4 pl-[7px] pr-6 md:pr-[35px] bg-[white] rounded-[32px] border border-solid border-[#dcdcdc] list-none hover:shadow-md hover:border-[#164ac8] transition-all duration-300 hover:-translate-y-1 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"} scale-[.8] sm:scale-[1]`}
               style={{ transitionDelay: `${index * 60 + 200}ms` }}
             >
               <div className="w-[42px] h-[42px] md:w-[52px] md:h-[52px] rounded-full overflow-hidden shrink-0">
@@ -91,7 +91,7 @@ export const IndustrySegmentsSection = () => {
             </li>
           ))}
 
-          <li className="flex w-14 h-14 md:w-16 md:h-16 items-center justify-center bg-[#1272E8] rounded-full list-none hover:bg-[#1a56e0] transition-colors duration-300">
+          <li className="flex w-14 h-14 md:w-16 md:h-16 items-center justify-center bg-[#1272E8] rounded-full list-none hover:bg-[#1a56e0] transition-colors duration-300 scale-[.8] sm:scale-[1]">
             <button
               type="button"
               aria-label="Weitere Branchen anzeigen"
