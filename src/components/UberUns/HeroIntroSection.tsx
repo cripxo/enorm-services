@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import { useState, useRef } from "react";
-import type { Swiper as SwiperType } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
 import enormteamicon from "../../assets/images/enorm-team.webp";
 import marker from "../../assets/svgs/Marker.svg"
 
