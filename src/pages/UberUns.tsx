@@ -1,5 +1,6 @@
 import FooterContactSection from "../components/Home/sections/FooterContactSection";
 import TopNavigationSection from "../components/Home/sections/TopNavigationSection"
+import HeroIntroSection from "../components/UberUns/HeroIntroSection";
 
 const UberUns = () =>{
     return <main
@@ -7,6 +8,7 @@ const UberUns = () =>{
          data-model-id="5:1410"
        >
            <TopNavigationSection className="bg-[black]"/>
+           <HeroIntroSection/>
    <footer className="mt-auto">
              <FooterContactSection />
            </footer>

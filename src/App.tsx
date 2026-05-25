@@ -1,9 +1,11 @@
+import "swiper/css";
+import "swiper/css/navigation";
+import Home from './pages/Home';
+import UberUns from './pages/UberUns';
 import AiSolutions from './pages/AiSolutions';
 import Brandschutz from './pages/Brandschutz';
 import BuldingCleaning from './pages/BuldingCleaning';
-import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import UberUns from './pages/UberUns';
 
 const App = () => {
   return (

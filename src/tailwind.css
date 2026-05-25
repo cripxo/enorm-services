@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:500,400,600|Inter:400");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,9 +13,6 @@
   }
 }
 
-@tailwind components;
-@tailwind utilities;
-
 @layer components {
   .all-\[unset\] {
     all: unset;
@@ -21,7 +20,28 @@
 }
 
 :root {
+  --alpha-black-alpha-100: rgba(0, 0, 0, 1);
+  --alpha-white-alpha-100: rgba(255, 255, 255, 1);
+  --border-radii-absolute-radius-10: 10px;
+  --border-radii-absolute-radius-8: 8px;
+  --border-radii-semantic-rounded-lg-xl: var(--border-radii-absolute-radius-10);
+  --brand-colors-brand-neutrals-300: var(--raw-colors-neutral-300);
+  --brand-colors-brand-neutrals-700: var(--raw-colors-neutral-700);
+  --raw-colors-neutral-300: rgba(212, 212, 212, 1);
+  --raw-colors-neutral-700: rgba(64, 64, 64, 1);
+  --semantic-colors-general-background: var(--alpha-white-alpha-100);
+  --semantic-colors-unofficial-accent-3: var(--brand-colors-brand-neutrals-300);
   --animate-spin: spin 1s linear infinite;
+}
+
+[data-semantic-colors-mode="shadcn"] {
+  --semantic-colors-general-background: var(--alpha-white-alpha-100);
+  --semantic-colors-unofficial-accent-3: var(--brand-colors-brand-neutrals-300);
+}
+
+[data-semantic-colors-mode="shadcn-dark"] {
+  --semantic-colors-general-background: var(--alpha-black-alpha-100);
+  --semantic-colors-unofficial-accent-3: var(--brand-colors-brand-neutrals-700);
 }
 
 .animate-fade-in {
