@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import enormteamicon from "../../assets/images/enorm-team.webp";
 import marker from "../../assets/svgs/Marker.svg"
 
@@ -106,8 +106,6 @@ const staggerContainer = {
 
 export const HeroIntroSection = () => {
   const [timelineIndex, setTimelineIndex] = useState(0);
-  const swiperRef = useRef<any>(null);
-const [activeIndex, setActiveIndex] = useState(0);
 
   // Responsive: show 1 on mobile, 2 on sm, 3 on lg, but we'll handle via CSS
   const visibleItems = 4;
