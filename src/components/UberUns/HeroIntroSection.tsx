@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import { useState, useRef } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -97,14 +97,6 @@ const progressItems = [
   },
 ];
 
-const navItems = [
-  { label: "Startsite", active: false },
-  { label: "Gebäudereinigung", active: false },
-  { label: "Brandschutz", active: false },
-  { label: "Softwarelösungen", active: false },
-  { label: "Über uns", active: true },
-];
-
 const fadeUp:any = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
@@ -124,7 +116,6 @@ const [activeIndex, setActiveIndex] = useState(0);
   const visibleItems = 4;
   const totalItems = timelineItems.length;
 
-const initialSlide = timelineItems.length; // start në mes të kopjeve
 
 const handleNext = () => {
   setTimelineIndex((prev) => {
@@ -152,146 +143,7 @@ const handlePrev = () => {
           }}
         />
         <div className="absolute inset-0 bg-[#081022e6] opacity-0" />
-        <motion.div
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true, amount: 0.2 }}
-  variants={staggerContainer}
-  className="w-full bg-[linear-gradient(180deg,rgba(6,23,65,1)_0%,rgba(3,11,29,1)_100%)] rounded-t-[30px] py-16 md:py-20 lg:py-24 px-6 sm:px-10 md:px-16 relative mt-[-200px]"
->
-  <div className="mx-auto flex items-center gap-4">
-
-    {/* Prev Button */}
-    <button
-      type="button"
-      aria-label="Vorherige Zeitleiste"
-      onClick={() => swiperRef.current?.slidePrev()}
-      className="cursor-pointer hidden md:flex flex-shrink-0 items-center justify-center w-[50px] h-[50px] rounded-[8px] hover:bg-[#ffffff10]"
-    >
-      <img
-        className="w-[40px] h-[40px]"
-        alt="Vorherige"
-        src="https://c.animaapp.com/vYykJZog/img/component-2.svg"
-      />
-    </button>
-
-    {/* Swiper */}
-    <div className="flex-1 overflow-hidden">
-<Swiper
-  modules={[Navigation, Autoplay]}
-  slidesPerView={4}
-  slidesPerGroup={4}
-  spaceBetween={0}
-  loop={true}
-  autoplay={{ delay: 3000, disableOnInteraction: false }}
-  speed={600}
-  onSwiper={(swiper: SwiperType) => {
-    swiperRef.current = swiper;
-  }}
-  onSlideChange={(swiper: SwiperType) =>
-    setActiveIndex(swiper.realIndex % timelineItems.length)
-  }
-  breakpoints={{
-    0: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    640: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    1024: {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-    },
-  }}
->
-  {timelineItems.map((item) => (
-    <SwiperSlide key={item.id}>
-      <div className="flex flex-col items-center text-center px-4 py-6 border-l border-[#e1e6ef1a]">
-        <span className="text-white text-sm mb-4">{item.period}</span>
-        <span className="text-white text-xl font-semibold mb-6">
-          {item.title}
-        </span>
-        <p className="text-[#adb5c6] text-sm">{item.description}</p>
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-    </div>
-
-    {/* Next Button */}
-    <button
-      type="button"
-      aria-label="Nächste Zeitleiste"
-      onClick={() => swiperRef.current?.slideNext()}
-      className="cursor-pointer hidden md:flex flex-shrink-0 items-center justify-center w-[50px] h-[50px] rounded-[8px] hover:bg-[#ffffff10]"
-    >
-      <img
-        className="w-[40px] h-[40px]"
-        alt="Nächste"
-        src="https://c.animaapp.com/vYykJZog/img/component-3.svg"
-      />
-    </button>
-  </div>
-
-  {/* Dots (mobile) */}
-  <div className="flex md:hidden justify-center gap-2 mt-6">
-    {timelineItems.map((_, idx) => (
-      <button
-        key={idx}
-        onClick={() => swiperRef.current?.slideToLoop(idx)}
-        className={`w-2.5 h-2.5 rounded-full transition-colors ${
-          idx === activeIndex ? "bg-[#1172e7]" : "bg-[#e1e6ef33]"
-        }`}
-      />
-    ))}
-  </div>
-</motion.div>
-
-        {/* Navigation Header */}
-        <header className="absolute top-0 left-0 w-full flex items-center justify-between px-6 sm:px-10 md:px-16 lg:px-[200px] h-[70px] md:h-[100px] bg-[#091022b2] backdrop-blur-[25px] z-20">
-          <img
-            className="w-[180px] sm:w-[220px] md:w-[300px]"
-            alt="ENORM logo"
-            src="https://c.animaapp.com/vYykJZog/img/container-1.svg"
-          />
-          <nav
-            aria-label="Hauptnavigation"
-            className="hidden lg:flex items-center gap-8 xl:gap-12"
-          >
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href="#"
-                aria-current={item.active ? "page" : undefined}
-                className={`[font-family:'Google_Sans',Helvetica] text-base text-center leading-[100px] tracking-[0] transition-colors ${
-                  item.active
-                    ? "text-[white] font-semibold border-b-2 border-[#1172e7]"
-                    : "text-[#a4b2c4] font-normal hover:text-[white]"
-                }`}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-          <a
-            href="tel:+499119405530"
-            aria-label="Rufen Sie uns an"
-            className="hidden md:flex items-center gap-3"
-          >
-            <div className="flex w-10 h-10 lg:w-12 lg:h-12 items-center justify-center bg-[#1172e7] rounded-full">
-              <img
-                className="w-5 h-5"
-                alt="Telefon"
-                src="https://c.animaapp.com/vYykJZog/img/component-2-1.svg"
-              />
-            </div>
-            <span className="[font-family:'Google_Sans',Helvetica] font-medium text-[white] text-sm lg:text-base leading-5 whitespace-nowrap">
-              + 49 (0) 911 94 055 30
-            </span>
-          </a>
-        </header>
+        
       </div>
 
       {/* About Section (two columns) */}
